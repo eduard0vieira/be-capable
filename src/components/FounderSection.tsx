@@ -86,11 +86,11 @@ export default function FounderSection() {
 
             <p className="font-sans text-base text-[#1a1a1a]/65 leading-relaxed font-light">
               Minha jornada no marketing começou há dois anos, atuando internamente em
-              uma empresa. Foi ali que descobri minha paixão por estratégia e organização
-              — algo que sempre foi meu ponto forte. Com fé e direção de Deus, decidi dar um
+              uma empresa. Foi ali que descobri minha paixão por estratégia e organização,
+              algo que sempre foi meu ponto forte. Com fé e direção de Deus, decidi dar um
               passo maior e fundar a Be.Capable. Hoje, lidero a agência com propósito, visão
               e o compromisso de gerar resultados reais para cada cliente. Acredito que
-              empreender é mais do que crescer negócios — é impactar vidas.
+              empreender é mais do que crescer negócios, é impactar vidas.
             </p>
           </motion.div>
         </div>
