@@ -112,36 +112,37 @@ export default function MissionVisionValues() {
         </div>
 
         {/* Valores — grid de 4 */}
-        <div className="mb-12">
-          <motion.h3
-            initial={{ opacity: 0, y: 20 }}
-            animate={isInView ? { opacity: 1, y: 0 } : {}}
-            transition={{ duration: 0.5, delay: 0.5 }}
-            className="font-serif text-2xl font-bold text-[#1a1a1a] text-center mb-8"
-          >
-            Nossos Valores
-          </motion.h3>
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          animate={isInView ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.6, delay: 0.5 }}
+          className="mb-12 bg-white rounded-3xl border border-[#1a1a1a]/8 overflow-hidden"
+        >
+          <div className="px-8 pt-8 pb-4">
+            <h3 className="font-serif text-2xl font-bold text-[#1a1a1a]">
+              Nossos Valores
+            </h3>
+          </div>
 
-          <div className="grid grid-cols-1 gap-5 max-w-full">
-            {values.map((value, i) => (
-              <motion.div
-                key={value.title}
-                initial={{ opacity: 0, y: 30 }}
-                animate={isInView ? { opacity: 1, y: 0 } : {}}
-                transition={{ duration: 0.5, delay: 0.6 + i * 0.1 }}
-                className="group bg-white rounded-3xl p-7 flex flex-col gap-4 border border-[#1a1a1a]/8 hover:border-[#800020]/30 hover:shadow-md transition-all duration-300"
-              >
-                <span className="text-3xl">{value.icon}</span>
+          {values.map((value, i) => (
+            <div
+              key={value.title}
+              className={`flex items-start gap-5 px-8 py-6 ${
+                i < values.length - 1 ? "border-b border-[#1a1a1a]/8" : ""
+              }`}
+            >
+              <span className="text-2xl mt-0.5 shrink-0">{value.icon}</span>
+              <div className="flex flex-col gap-1">
                 <h4 className="font-serif text-lg font-bold text-[#1a1a1a]">
                   {value.title}
                 </h4>
                 <p className="font-sans text-sm text-[#1a1a1a]/60 leading-relaxed font-light">
                   {value.description}
                 </p>
-              </motion.div>
-            ))}
-          </div>
-        </div>
+              </div>
+            </div>
+          ))}
+        </motion.div>
 
         {/* Nota humanitária */}
         <motion.div
