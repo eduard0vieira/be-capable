@@ -1,0 +1,119 @@
+"use client";
+
+import { motion, useInView } from "framer-motion";
+import { useRef } from "react";
+
+const stats = [
+  { value: "100%", label: "Comprometimento" },
+  { value: "10+", label: "Serviços oferecidos" },
+  { value: "∞", label: "Potencial de crescimento" },
+];
+
+export default function AboutSection() {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true, margin: "-100px" });
+
+  return (
+    <section id="quem-somos" className="py-24 bg-[#EAEAE4]">
+      <div className="max-w-7xl mx-auto px-6 lg:px-8">
+        <div
+          ref={ref}
+          className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center"
+        >
+          {/* Left: visual element */}
+          <motion.div
+            initial={{ opacity: 0, x: -50 }}
+            animate={isInView ? { opacity: 1, x: 0 } : {}}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+            className="relative"
+          >
+            <div className="relative aspect-square max-w-md mx-auto lg:mx-0">
+              {/* Background shape */}
+              <div className="absolute inset-4 bg-[#800020] rounded-[3rem] rotate-3" />
+              <div className="absolute inset-4 bg-[#F5F5F0] rounded-[3rem] -rotate-2 border-2 border-[#800020]/20" />
+
+              {/* Content inside box */}
+              <div className="relative z-10 h-full flex flex-col items-center justify-center p-10 rounded-[3rem]">
+                <span className="font-serif text-8xl font-black text-[#800020] leading-none">
+                  Be.
+                </span>
+                <span className="font-serif text-5xl font-bold text-[#1a1a1a] leading-none">
+                  Capable
+                </span>
+                <div className="mt-8 w-16 h-0.5 bg-[#800020]/40" />
+                <p className="mt-6 font-sans text-sm text-[#1a1a1a]/50 text-center italic leading-relaxed">
+                  &ldquo;Você é capaz de ir mais longe do que imagina.&rdquo;
+                </p>
+              </div>
+            </div>
+
+            {/* Stats floating cards */}
+            <div className="absolute -bottom-6 -right-4 lg:right-0 flex gap-3">
+              {stats.map((stat, i) => (
+                <motion.div
+                  key={stat.label}
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={isInView ? { opacity: 1, y: 0 } : {}}
+                  transition={{ duration: 0.5, delay: 0.6 + i * 0.1 }}
+                  className="bg-white rounded-2xl px-4 py-3 shadow-sm text-center min-w-[80px]"
+                >
+                  <p className="font-serif text-xl font-bold text-[#800020]">
+                    {stat.value}
+                  </p>
+                  <p className="font-sans text-[10px] text-[#1a1a1a]/50 leading-tight mt-0.5">
+                    {stat.label}
+                  </p>
+                </motion.div>
+              ))}
+            </div>
+          </motion.div>
+
+          {/* Right: text */}
+          <motion.div
+            initial={{ opacity: 0, x: 50 }}
+            animate={isInView ? { opacity: 1, x: 0 } : {}}
+            transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
+            className="flex flex-col gap-6"
+          >
+            <span className="inline-flex items-center gap-2 font-sans text-xs font-semibold text-[#800020] tracking-widest uppercase">
+              <span className="w-8 h-px bg-[#800020]" />
+              Quem Somos
+            </span>
+
+            <h2 className="font-serif text-4xl md:text-5xl font-bold text-[#1a1a1a] leading-tight">
+              Transformando marcas em{" "}
+              <em className="text-[#800020] not-italic">referências</em>
+            </h2>
+
+            <div className="flex flex-col gap-4 font-sans text-[#1a1a1a]/65 text-base leading-relaxed font-light">
+              <p>
+                A <strong className="font-semibold text-[#1a1a1a]/80">Be.Capable</strong> é uma agência de marketing criada para impulsionar negócios que têm algo relevante a dizer ao mundo. Acreditamos que cada marca carrega um propósito único, e nossa missão é amplificar essa voz com estratégia, criatividade e consistência.
+              </p>
+              <p>
+                Trabalhamos lado a lado com empreendedores, pequenas empresas e marcas pessoais que desejam crescer de forma sustentável e autêntica — sem fórmulas genéricas, mas com soluções pensadas para o seu contexto.
+              </p>
+              <p>
+                Do posicionamento à produção de conteúdo, do design à análise de resultados, somos o parceiro estratégico que sua marca precisa para dar o próximo passo.
+              </p>
+            </div>
+
+            <div className="flex items-center gap-6 pt-2">
+              <a
+                href="#servicos"
+                className="inline-flex items-center gap-2 px-6 py-3 bg-[#800020] text-white font-sans font-semibold rounded-full text-sm hover:bg-[#600018] transition-colors"
+              >
+                Ver nossos serviços
+              </a>
+              <a
+                href="#contato"
+                className="font-sans text-sm font-medium text-[#800020] hover:underline underline-offset-4"
+              >
+                Fale conosco →
+              </a>
+            </div>
+          </motion.div>
+        </div>
+      </div>
+    </section>
+  );
+}
