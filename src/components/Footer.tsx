@@ -17,7 +17,7 @@ export default function Footer() {
             transition={{ duration: 0.6 }}
             className="flex justify-center mb-8"
           >
-            <Logo width={160} height={78} className="brightness-0 invert" />
+            <Logo width={160} height={78} variant="white" />
           </motion.div>
 
           <motion.h2
