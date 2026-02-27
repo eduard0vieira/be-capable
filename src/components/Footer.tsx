@@ -15,11 +15,21 @@ export default function Footer() {
       {/* CTA Banner */}
       <div className="bg-[#800020] py-16 px-6">
         <div className="max-w-4xl mx-auto text-center">
-          <motion.h2
+          <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
+            className="flex justify-center mb-8"
+          >
+            <Logo width={160} height={78} className="brightness-0 invert" />
+          </motion.div>
+
+          <motion.h2
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.1 }}
             className="font-serif text-4xl md:text-5xl font-bold text-white mb-4"
           >
             Pronto para crescer?
