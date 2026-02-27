@@ -77,7 +77,7 @@ export default function Footer() {
             {/* Brand */}
             <div className="flex flex-col gap-4">
               <a href="#">
-                <Logo width={120} height={58} className="brightness-0 invert" />
+                <Logo width={120} height={58} variant="white" />
               </a>
               <p className="font-sans text-sm text-white/50 leading-relaxed font-light max-w-xs">
                 Estratégias inteligentes, criatividade e performance para gerar
