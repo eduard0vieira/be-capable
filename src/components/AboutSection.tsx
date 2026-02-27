@@ -2,6 +2,7 @@
 
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
+import Logo from "@/components/Logo";
 
 const stats = [
   { value: "100%", label: "Comprometimento" },
@@ -34,12 +35,7 @@ export default function AboutSection() {
 
               {/* Content inside box */}
               <div className="relative z-10 h-full flex flex-col items-center justify-center p-10 rounded-[3rem]">
-                <span className="font-serif text-8xl font-black text-[#800020] leading-none">
-                  Be.
-                </span>
-                <span className="font-serif text-5xl font-bold text-[#1a1a1a] leading-none">
-                  Capable
-                </span>
+                <Logo width={220} height={107} />
                 <div className="mt-8 w-16 h-0.5 bg-[#800020]/40" />
                 <p className="mt-6 font-sans text-sm text-[#1a1a1a]/50 text-center italic leading-relaxed">
                   &ldquo;Você é capaz de ir mais longe do que imagina.&rdquo;
