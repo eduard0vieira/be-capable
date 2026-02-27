@@ -42,17 +42,17 @@ export default function HeroSection() {
         <div className="absolute top-1/2 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#800020]/20 to-transparent" />
       </div>
 
-      <div className="relative z-10 max-w-5xl mx-auto px-6 lg:px-8 text-center">
+      <div className="relative z-10 max-w-5xl mx-auto px-6 lg:px-8 w-full">
         <motion.div
           variants={containerVariants}
           initial="hidden"
           animate="visible"
-          className="flex flex-col items-center gap-6"
+          className="flex flex-col items-start gap-6"
         >
           {/* Tag line */}
           <motion.span
             variants={itemVariants}
-            className="inline-flex items-center gap-2 px-4 py-1.5 border border-[#800020]/30 rounded-full font-sans text-xs font-semibold text-[#800020] tracking-widest uppercase"
+            className="inline-flex items-center gap-2 px-4 py-1.5 border border-[#800020]/30 rounded-full font-sans text-xs font-semibold text-[#800020] tracking-widest uppercase self-start"
           >
             <span className="w-1.5 h-1.5 rounded-full bg-[#800020] inline-block" />
             Agência de Marketing
@@ -61,16 +61,37 @@ export default function HeroSection() {
           {/* Main title */}
           <motion.h1
             variants={itemVariants}
-            className="font-serif text-6xl md:text-7xl lg:text-8xl font-black text-[#1a1a1a] leading-none tracking-tight"
+            className="font-serif font-black text-[#800020] leading-[0.9] tracking-tight text-left"
+            style={{ fontSize: "clamp(5rem, 18vw, 14rem)" }}
           >
-            Be.{" "}
-            <span className="text-[#800020]">Capable</span>
+            <span className="block">
+              Be
+              <span className="inline-flex items-end mb-[0.08em] mx-[0.04em]">
+                {/* Globinho neutro substituindo o ponto */}
+                <svg
+                  viewBox="0 0 32 32"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="inline-block"
+                  style={{ width: "0.28em", height: "0.28em" }}
+                  aria-hidden="true"
+                >
+                  <circle cx="16" cy="16" r="15" fill="#A0845C" />
+                  <ellipse cx="16" cy="16" rx="6" ry="15" stroke="#F5F5F0" strokeWidth="1.5" fill="none" />
+                  <line x1="1" y1="16" x2="31" y2="16" stroke="#F5F5F0" strokeWidth="1.5" />
+                  <line x1="3" y1="9" x2="29" y2="9" stroke="#F5F5F0" strokeWidth="1" />
+                  <line x1="3" y1="23" x2="29" y2="23" stroke="#F5F5F0" strokeWidth="1" />
+                  <circle cx="16" cy="16" r="15" stroke="#8B6E47" strokeWidth="1.5" fill="none" />
+                </svg>
+              </span>
+            </span>
+            <span className="block">Capable</span>
           </motion.h1>
 
           {/* Subtitle */}
           <motion.p
             variants={itemVariants}
-            className="font-sans text-lg md:text-xl text-[#1a1a1a]/60 font-light max-w-2xl leading-relaxed"
+            className="font-sans text-lg md:text-xl text-[#1a1a1a]/60 font-light max-w-2xl leading-relaxed text-left"
           >
             Estratégias inteligentes, criatividade e performance para gerar{" "}
             <strong className="font-semibold text-[#1a1a1a]/80">
