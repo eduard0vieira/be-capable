@@ -61,8 +61,8 @@ export default function FounderSection() {
                 transition={{ duration: 0.5, delay: 0.8 }}
                 className="absolute -bottom-4 -right-4 bg-[#800020] text-white rounded-2xl px-5 py-3 shadow-lg"
               >
-                <p className="font-sans text-xs font-semibold tracking-wide uppercase">CEO & Fundadora</p>
-                <p className="font-serif text-sm font-bold mt-0.5">Be.Capable</p>
+                <p className="font-sans text-xs font-thin tracking-wide uppercase">CEO & Fundadora</p>
+                <p className="font-sans text-sm font-semibold mt-0.5">Isa Pabst</p>
               </motion.div>
             </div>
           </motion.div>
