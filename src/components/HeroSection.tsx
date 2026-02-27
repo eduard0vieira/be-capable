@@ -46,21 +46,28 @@ export default function HeroSection() {
       </motion.div>
 
       {/* Scroll indicator */}
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
+      <motion.a
+        href="#servicos"
+        initial={{ opacity: 0, y: 10 }}
+        animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 1.2, duration: 0.8 }}
-        className="absolute bottom-10 flex flex-col items-center gap-2"
+        className="absolute bottom-10 flex flex-col items-center gap-3 group cursor-pointer"
       >
-        <span className="font-sans text-xs text-[#1a1a1a]/40 uppercase tracking-widest">
+        <span className="font-sans text-[10px] text-[#1a1a1a]/35 uppercase tracking-[0.2em]">
           scroll
         </span>
         <motion.div
-          animate={{ y: [0, 8, 0] }}
-          transition={{ repeat: Infinity, duration: 1.5 }}
-          className="w-px h-8 bg-gradient-to-b from-[#800020]/50 to-transparent"
-        />
-      </motion.div>
+          animate={{ y: [0, 6, 0] }}
+          transition={{ repeat: Infinity, duration: 2, ease: "easeInOut" }}
+          className="w-6 h-10 rounded-full border border-[#800020]/25 flex items-start justify-center pt-2 group-hover:border-[#800020]/50 transition-colors"
+        >
+          <motion.div
+            animate={{ y: [0, 10, 0], opacity: [1, 0, 1] }}
+            transition={{ repeat: Infinity, duration: 2, ease: "easeInOut" }}
+            className="w-1 h-1 rounded-full bg-[#800020]"
+          />
+        </motion.div>
+      </motion.a>
     </section>
   );
 }
