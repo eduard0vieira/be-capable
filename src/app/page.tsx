@@ -11,8 +11,8 @@ export default function Home() {
     <main>
       <Navbar />
       <HeroSection />
-      <ServicesSection />
       <AboutSection />
+      <ServicesSection />
       <MissionVisionValues />
       <FounderSection />
       <Footer />
