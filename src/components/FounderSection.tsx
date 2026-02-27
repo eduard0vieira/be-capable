@@ -47,20 +47,14 @@ export default function FounderSection() {
               <div className="absolute inset-0 rounded-full border border-[#800020]/15 scale-125" />
 
               {/* Photo circle */}
-              <div className="relative w-72 h-72 md:w-80 md:h-80 rounded-full overflow-hidden bg-[#800020]/10 border-4 border-[#800020]/20 flex items-center justify-center">
-                {/* 
-                  Para adicionar a foto real da CEO, substitua o conteúdo abaixo por:
-                  <Image src="/founder.jpg" alt="Nome da CEO" fill className="object-cover" />
-                  e coloque a foto em public/founder.jpg
-                */}
-                <div className="flex flex-col items-center gap-3 text-[#800020]/40">
-                  <svg className="w-20 h-20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
-                  </svg>
-                  <span className="font-sans text-xs text-[#800020]/50 text-center px-4">
-                    Foto da CEO
-                  </span>
-                </div>
+              <div className="relative w-72 h-72 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-[#800020]/20">
+                <Image
+                  src="/seo-be-capable.png"
+                  alt="CEO Be.Capable"
+                  fill
+                  className="object-cover object-center"
+                  priority
+                />
               </div>
 
               {/* Badge */}
