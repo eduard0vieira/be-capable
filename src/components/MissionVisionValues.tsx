@@ -122,7 +122,7 @@ export default function MissionVisionValues() {
             Nossos Valores
           </motion.h3>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+          <div className="grid grid-cols-1 gap-5 max-w-full">
             {values.map((value, i) => (
               <motion.div
                 key={value.title}
