@@ -92,9 +92,9 @@ export default function Footer() {
               </h4>
               <ul className="flex flex-col gap-2">
                 {[
+                  ["Serviços", "#servicos"],
                   ["Quem Somos", "#quem-somos"],
                   ["Valores", "#valores"],
-                  ["Serviços", "#servicos"],
                   ["Fundadora", "#fundadora"],
                 ].map(([label, href]) => (
                   <li key={href}>

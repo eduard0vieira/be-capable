@@ -6,9 +6,9 @@ import Logo from "@/components/Logo";
 import { WHATSAPP_URL } from "@/lib/contact";
 
 const navLinks = [
+  { label: "Serviços", href: "#servicos" },
   { label: "Quem Somos", href: "#quem-somos" },
   { label: "Valores", href: "#valores" },
-  { label: "Serviços", href: "#servicos" },
   { label: "Fundadora", href: "#fundadora" },
   { label: "Contato", href: "#contato" },
 ];
