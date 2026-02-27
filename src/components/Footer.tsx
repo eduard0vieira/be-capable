@@ -2,12 +2,7 @@
 
 import { motion } from "framer-motion";
 import Logo from "@/components/Logo";
-
-const whatsappNumber = "+554796028431";
-const whatsappMessage = encodeURIComponent(
-  "Olá! Vim pelo site da Be.Capable e gostaria de solicitar um orçamento."
-);
-const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`;
+import { WHATSAPP_URL } from "@/lib/contact";
 
 export default function Footer() {
   return (
@@ -52,7 +47,7 @@ export default function Footer() {
             className="flex flex-col sm:flex-row items-center justify-center gap-4"
           >
             <a
-              href={whatsappUrl}
+              href={WHATSAPP_URL}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-3 px-8 py-4 bg-white text-[#800020] font-sans font-bold rounded-full text-base hover:bg-[#F5F5F0] transition-colors shadow-lg"
@@ -130,7 +125,7 @@ export default function Footer() {
                   be.capablemkt@gmail.com
                 </a>
                 <a
-                  href={whatsappUrl}
+                  href={WHATSAPP_URL}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="group flex items-center gap-3 font-sans text-sm text-white/60 hover:text-white transition-colors"

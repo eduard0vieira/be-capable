@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Logo from "@/components/Logo";
+import { WHATSAPP_URL } from "@/lib/contact";
 
 const navLinks = [
   { label: "Serviços", href: "#servicos" },
@@ -53,7 +54,9 @@ export default function Navbar() {
           </ul>
 
           <a
-            href="#contato"
+            href={WHATSAPP_URL}
+            target="_blank"
+            rel="noopener noreferrer"
             className="hidden md:inline-flex items-center px-5 py-2.5 bg-[#800020] text-white font-sans text-sm font-semibold rounded-full hover:bg-[#600018] transition-colors duration-200 tracking-wide"
           >
             Solicite um orçamento
@@ -103,7 +106,9 @@ export default function Navbar() {
               ))}
               <li>
                 <a
-                  href="#contato"
+                  href={WHATSAPP_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   onClick={() => setMobileMenuOpen(false)}
                   className="inline-flex items-center px-5 py-2.5 bg-[#800020] text-white font-sans text-sm font-semibold rounded-full hover:bg-[#600018] transition-colors w-full justify-center mt-2"
                 >

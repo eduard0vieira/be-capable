@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import Logo from "@/components/Logo";
+import { WHATSAPP_URL } from "@/lib/contact";
 
 export default function HeroSection() {
   return (
@@ -23,7 +24,9 @@ export default function HeroSection() {
         className="flex flex-col sm:flex-row items-center gap-4"
       >
         <a
-          href="#contato"
+          href={WHATSAPP_URL}
+          target="_blank"
+          rel="noopener noreferrer"
           className="group inline-flex items-center gap-2 px-8 py-4 bg-[#800020] text-white font-sans font-semibold rounded-full text-base hover:bg-[#600018] transition-all duration-300 shadow-lg shadow-[#800020]/25 hover:shadow-[#800020]/40 hover:scale-105"
         >
           Solicite um orçamento
@@ -53,9 +56,6 @@ export default function HeroSection() {
         transition={{ delay: 1.2, duration: 0.8 }}
         className="absolute bottom-10 flex flex-col items-center gap-3 group cursor-pointer"
       >
-        <span className="font-sans text-[10px] text-[#1a1a1a]/35 uppercase tracking-[0.2em]">
-          scroll
-        </span>
         <motion.div
           animate={{ y: [0, 6, 0] }}
           transition={{ repeat: Infinity, duration: 2, ease: "easeInOut" }}

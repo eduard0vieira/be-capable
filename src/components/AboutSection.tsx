@@ -3,6 +3,7 @@
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 import Logo from "@/components/Logo";
+import { WHATSAPP_URL } from "@/lib/contact";
 
 const stats = [
   { value: "100%", label: "Comprometimento" },
@@ -98,7 +99,9 @@ export default function AboutSection() {
                 Ver nossos serviços
               </a>
               <a
-                href="#contato"
+                href={WHATSAPP_URL}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="font-sans text-sm font-medium text-[#800020] hover:underline underline-offset-4"
               >
                 Fale conosco →
