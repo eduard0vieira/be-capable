@@ -32,7 +32,7 @@ export default function MissionVisionValues() {
               initial={{ opacity: 0, y: 30 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.5, delay: i * 0.15 }}
-              className="bg-[#F5F5F0] border-2 border-dashed border-[#800020]/50 rounded-2xl p-10 flex flex-col items-center text-center gap-5"
+              className="bg-[#F5F5F0] border-2 border-[#800020]/30 rounded-2xl p-10 flex flex-col items-center text-center gap-5"
             >
               <h3 className="font-serif text-3xl font-bold text-[#800020]">
                 {card.title}
