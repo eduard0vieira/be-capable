@@ -15,7 +15,7 @@ const services = [
     ),
   },
   {
-    title: "Videomake + Edição de vídeo!",
+    title: "Videomake + Edição de vídeo",
     description: "Produção de vídeos profissionais que contam a história da sua marca com impacto e autenticidade.",
     icon: (
       <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -25,7 +25,7 @@ const services = [
   },
   {
     title: "Storymaker",
-    description: "Criação de stories envolventes e estratégicos para manter sua marca sempre presente e relevante.",
+    description: "Criação de stories criativos e envolventes para cobertura completa do seu evento, fortalecendo a presença da sua marca.",
     icon: (
       <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />

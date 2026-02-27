@@ -37,29 +37,9 @@ export default function AboutSection() {
                 <Logo width={220} height={107} />
                 <div className="mt-8 w-16 h-0.5 bg-[#800020]/40" />
                 <p className="mt-6 font-sans text-sm text-[#1a1a1a]/50 text-center italic leading-relaxed">
-                  &ldquo;Você é capaz de ir mais longe do que imagina.&rdquo;
+                  &ldquo;Ser capaz de fazer sua marca acontecer.&rdquo;
                 </p>
               </div>
-            </div>
-
-            {/* Stats floating cards */}
-            <div className="absolute -bottom-6 -right-4 lg:right-0 flex gap-3">
-              {stats.map((stat, i) => (
-                <motion.div
-                  key={stat.label}
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={isInView ? { opacity: 1, y: 0 } : {}}
-                  transition={{ duration: 0.5, delay: 0.6 + i * 0.1 }}
-                  className="bg-white rounded-2xl px-4 py-3 shadow-sm text-center min-w-[80px]"
-                >
-                  <p className="font-serif text-xl font-bold text-[#800020]">
-                    {stat.value}
-                  </p>
-                  <p className="font-sans text-[10px] text-[#1a1a1a]/50 leading-tight mt-0.5">
-                    {stat.label}
-                  </p>
-                </motion.div>
-              ))}
             </div>
           </motion.div>
 
