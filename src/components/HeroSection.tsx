@@ -1,7 +1,6 @@
 "use client";
 
 import { motion } from "framer-motion";
-
 import type { Variants } from "framer-motion";
 
 const containerVariants: Variants = {
@@ -38,7 +37,6 @@ export default function HeroSection() {
           transition={{ duration: 1.5, ease: "easeOut", delay: 0.3 }}
           className="absolute -bottom-48 -left-24 w-[500px] h-[500px] rounded-full bg-[#800020]"
         />
-        {/* Thin horizontal line accent */}
         <div className="absolute top-1/2 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#800020]/20 to-transparent" />
       </div>
 
@@ -67,7 +65,6 @@ export default function HeroSection() {
             <span className="block">
               Be
               <span className="inline-flex items-end mb-[0.08em] mx-[0.04em]">
-                {/* Globinho neutro substituindo o ponto */}
                 <svg
                   viewBox="0 0 32 32"
                   fill="none"

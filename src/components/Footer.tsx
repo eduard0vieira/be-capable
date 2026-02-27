@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Logo from "@/components/Logo";
 
 const whatsappNumber = "+554796028431";
 const whatsappMessage = encodeURIComponent(
@@ -70,8 +71,8 @@ export default function Footer() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mb-10">
             {/* Brand */}
             <div className="flex flex-col gap-4">
-              <a href="#" className="font-serif text-2xl font-bold">
-                Be.<span className="text-[#800020]">Capable</span>
+              <a href="#">
+                <Logo width={120} height={58} className="brightness-0 invert" />
               </a>
               <p className="font-sans text-sm text-white/50 leading-relaxed font-light max-w-xs">
                 Estratégias inteligentes, criatividade e performance para gerar

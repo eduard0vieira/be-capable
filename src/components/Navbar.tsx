@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import Logo from "@/components/Logo";
 
 const navLinks = [
   { label: "Serviços", href: "#servicos" },
@@ -34,11 +35,8 @@ export default function Navbar() {
     >
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="flex items-center justify-between h-18 py-4">
-          <a
-            href="#"
-            className="font-serif text-2xl font-bold text-[#800020] tracking-tight"
-          >
-            Be.<span className="text-[#1a1a1a]">Capable</span>
+          <a href="#">
+            <Logo width={120} height={58} />
           </a>
 
           <ul className="hidden md:flex items-center gap-8">
