@@ -140,9 +140,11 @@ export default function Footer() {
           </div>
 
           <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
-            <p className="font-sans text-xs text-white/30">
-              © {new Date().getFullYear()} Be.Capable Agência de Marketing. Todos os direitos reservados.
-            </p>
+            <div className="flex items-center gap-2 font-sans text-xs text-white/30">
+              <span>© {new Date().getFullYear()}</span>
+              <Logo width={60} height={29} className="brightness-0 invert opacity-30" />
+              <span>Agência de Marketing. Todos os direitos reservados.</span>
+            </div>
             <p className="font-sans text-xs text-white/30">
               Feito com{" "}
               <span className="text-[#800020]">♥</span>{" "}
