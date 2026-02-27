@@ -87,13 +87,10 @@ export default function AboutSection() {
 
             <div className="flex flex-col gap-4 font-sans text-[#1a1a1a]/65 text-base leading-relaxed font-light">
               <p>
-                A <strong className="font-semibold text-[#1a1a1a]/80">Be.Capable</strong> é uma agência de marketing criada para impulsionar negócios que têm algo relevante a dizer ao mundo. Acreditamos que cada marca carrega um propósito único, e nossa missão é amplificar essa voz com estratégia, criatividade e consistência.
+                Somos uma agência de marketing focada em crescimento, posicionamento e geração de resultados.
               </p>
               <p>
-                Trabalhamos lado a lado com empreendedores, pequenas empresas e marcas pessoais que desejam crescer de forma sustentável e autêntica — sem fórmulas genéricas, mas com soluções pensadas para o seu contexto.
-              </p>
-              <p>
-                Do posicionamento à produção de conteúdo, do design à análise de resultados, somos o parceiro estratégico que sua marca precisa para dar o próximo passo.
+                Nossa missão é ajudar empresas a se destacarem no mercado através de estratégias digitais personalizadas.
               </p>
             </div>
 
