@@ -15,7 +15,7 @@ const montserrat = Montserrat({
 });
 
 export const metadata: Metadata = {
-  title: "Be.Capable | Agência de Marketing",
+  title: "Be.Capable",
   description:
     "Estratégias inteligentes, criatividade e performance para gerar resultados reais para o seu negócio.",
   openGraph: {
