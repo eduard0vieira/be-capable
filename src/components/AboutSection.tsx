@@ -30,11 +30,9 @@ export default function AboutSection() {
             className="relative"
           >
             <div className="relative aspect-square max-w-md mx-auto lg:mx-0">
-              {/* Background shape */}
               <div className="absolute inset-4 bg-[#800020] rounded-[3rem] rotate-3" />
               <div className="absolute inset-4 bg-[#F5F5F0] rounded-[3rem] -rotate-2 border-2 border-[#800020]/20" />
 
-              {/* Content inside box */}
               <div className="relative z-10 h-full flex flex-col items-center justify-center p-10 rounded-[3rem]">
                 <Logo width={220} height={107} />
                 <div className="mt-8 w-16 h-0.5 bg-[#800020]/40" />

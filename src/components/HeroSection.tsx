@@ -50,12 +50,15 @@ export default function HeroSection() {
 
       {/* Scroll indicator */}
       <motion.a
-        href="#servicos"
+        href="#quem-somos"
         initial={{ opacity: 0, y: 10 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 1.2, duration: 0.8 }}
         className="absolute bottom-10 flex flex-col items-center gap-3 group cursor-pointer"
       >
+        <span className="font-sans text-[10px] text-[#1a1a1a]/35 uppercase tracking-[0.2em]">
+          scroll
+        </span>
         <motion.div
           animate={{ y: [0, 6, 0] }}
           transition={{ repeat: Infinity, duration: 2, ease: "easeInOut" }}
