@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 
-const whatsappNumber = "5547960284310";
+const whatsappNumber = "+554796028431";
 const whatsappMessage = encodeURIComponent(
   "Olá! Vim pelo site da Be.Capable e gostaria de solicitar um orçamento."
 );
